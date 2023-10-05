@@ -38,7 +38,7 @@ def process_json():
 
     response = g4f.ChatCompletion.create(
         model="gpt-3.5-turbo",
-        provider=g4f.Provider.DeepAi,
+        provider=g4f.Provider.Aichat,
         messages=[
             { "role": 'system', "content": system_message },
             { "role": 'user', "content": user_message },
