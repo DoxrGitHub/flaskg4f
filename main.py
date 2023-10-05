@@ -77,7 +77,7 @@ def process_json2():
 
     response = g4f.ChatCompletion.create(
         model="gpt-4",
-        provider=g4f.Provider.Aivvm,
+        provider=g4f.Provider.Bing,
         messages=[
             { "role": 'system', "content": system_message },
             { "role": 'user', "content": user_message },
