@@ -76,8 +76,8 @@ def process_json2():
     asyncio.set_event_loop(loop)
 
     response = g4f.ChatCompletion.create(
-        model="gpt-4",
-        provider=g4f.Provider.Bing,
+        model="gpt-4-0613",
+        provider=g4f.Provider.Vercel,
         messages=[
             { "role": 'system', "content": system_message },
             { "role": 'user', "content": user_message },
